@@ -77,7 +77,7 @@ async def incoming_start_message_f(bot, update):
     #    except Exception:
      #       await bot.send_message(
       #          chat_id=update.chat.id,
-       #         text="Something went Wrong. Contact my [Boss](https://t.me/jettastic).",
+       #         text="Something went Wrong. Contact my [Boss](https://t.me/jetbots_bot).",
         #        parse_mode="markdown",
          #       disable_web_page_preview=True)
           #  return
@@ -87,7 +87,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('SOURCE CODE 🤤', url='https://t.me/jettastic')
+                    InlineKeyboardButton('SOURCE CODE 🤤', url='https://t.me/jetbots_bot')
                 ]
             ]
         ),
@@ -105,7 +105,7 @@ async def incoming_compress_message_f(update):
   #        if user.status == "kicked":
   #           await bot.send_message(
   #               chat_id=update.chat.id,
-  #               text="Sorry Sir, You are Banned to use me. Contact my [BOSS](https://t.me/jettastic).",
+  #               text="Sorry Sir, You are Banned to use me. Contact my [BOSS](https://t.me/jetbots_bot).",
   #               parse_mode="markdown",
   #               disable_web_page_preview=True
     #         )
@@ -129,7 +129,7 @@ async def incoming_compress_message_f(update):
     #  except Exception:
     #      await bot.send_message(
     #          chat_id=update.chat.id,
-    #          text="Something went Wrong. Contact my [BOSS](https://t.me/jettastic).",
+    #          text="Something went Wrong. Contact my [BOSS](https://t.me/jetbots_bot).",
     #          parse_mode="markdown",
     #          disable_web_page_preview=True
     #      )
