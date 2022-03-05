@@ -36,6 +36,7 @@ from bot.commands import Command
 from bot.plugins.call_back_button_handler import button
 sudo_users = "1666551439" 
 
+OWNER = 1856089576
 uptime = dt.now()
 
 def ts(milliseconds: int) -> str:
@@ -98,7 +99,7 @@ if __name__ == "__main__" :
         await message.reply_text("```Normal Mode has been set", quote=True)
         cmd1.insert(0, "-s 820x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -crf 33.5 -c:a libopus -b:a 32k -c:s copy -ac 2  -ab 32k  -vbr 2 -level 3.1 -threads 3 -bf 3")
                          
-    @app.on_message(filters.incoming & filters.command(["restart", f"restart@{BOT_USERNAME}"]))
+    @app.on_message(filters.incoming & filters.command(["restart", f"restart@{BOT_USERNAME}"]) & filters.chat(OWNER))
     async def restarter(app, message):
       await message.reply_text("•Restarting")
       quit(1)
